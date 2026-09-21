@@ -1,0 +1,2 @@
+scenario_id,line_id,item,required_quantity,manufacturer_part_number,vendor,vendor_approval_status,price_basis,coupon_code_or_mechanism,payer,reimbursement_status,item_subtotal,shipping,tax,mandatory_fees,delivered_cost,lead_time,url,notes
+

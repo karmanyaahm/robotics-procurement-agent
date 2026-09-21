@@ -1,0 +1,14 @@
+interface:
+  display_name: Robotics Acquisition
+  short_description: Compare compliant robotics purchase scenarios
+  default_prompt: Use $robotics-acquisition to compare approved and non-approved vendor
+    baskets with coupon and no-coupon totals.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
