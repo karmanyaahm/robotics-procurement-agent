@@ -1,0 +1,63 @@
+# Approved vendor list. The keys are the `vendor` values used in offer records.
+#
+# Everything starts as approved: false on purpose. `procure compare` refuses to
+# run until at least one vendor is approved, and never recommends an
+# unapproved vendor (it lists them under "Excluded" so you can see what you're
+# leaving on the table).
+#
+# Fields
+#   approved     true/false. Only approved vendors can win.
+#   access       api | fetch | browser — how the agent should get offers.
+#                api = use `procure <vendor>`; fetch = plain page fetch works;
+#                browser = needs a real browser (JS-heavy, login-gated, or anti-bot).
+#   domains      sites the agent may visit for this vendor.
+#   login        true if prices depend on your account (negotiated/tax-exempt
+#                pricing). The agent uses your logged-in Chrome for these.
+#   charges_tax  false if this vendor has you on file as tax-exempt.
+#   cart_ok      true lets the agent add to cart to read shipping. It never
+#                checks out either way.
+#   shipping     null (unknown → landed cost is a lower bound), or
+#                {flat: 9.99, free_over: 100}. Take numbers from your account
+#                terms, not from memory.
+
+vendors:
+  digikey:
+    name: DigiKey
+    approved: false          # TODO: set per your approved list
+    access: api
+    domains: [digikey.com]
+    login: false
+    charges_tax: true
+    cart_ok: false
+    shipping: null
+
+  mouser:
+    name: Mouser
+    approved: false          # TODO
+    access: api
+    domains: [mouser.com]
+    login: false
+    charges_tax: true
+    cart_ok: false
+    shipping: null
+
+  mcmaster:
+    name: McMaster-Carr
+    approved: false          # TODO
+    access: browser
+    domains: [mcmaster.com]
+    login: true
+    charges_tax: true
+    cart_ok: false
+    shipping: null
+
+  # Copy this block for each additional approved vendor.
+  # example-vendor:
+  #   name: Example Vendor
+  #   approved: true
+  #   access: browser
+  #   domains: [example.com]
+  #   login: false
+  #   charges_tax: true
+  #   cart_ok: false
+  #   shipping: null

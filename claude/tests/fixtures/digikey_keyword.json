@@ -1,0 +1,51 @@
+{
+  "_comment": "Trimmed from a real v4 KeywordSearch response shape (sandbox). Values are illustrative, not current prices.",
+  "Products": [
+    {
+      "Description": {"ProductDescription": "CAP ALUM 1000UF 20% 35V RADIAL", "DetailedDescription": "Aluminum Electrolytic Capacitors Radial, Can 2000 Hrs @ 105C"},
+      "Manufacturer": {"Id": 10, "Name": "Panasonic Electronic Components"},
+      "ManufacturerProductNumber": "ECA-1VHG102",
+      "UnitPrice": 1.03,
+      "ProductUrl": "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ECA-1VHG102/245154",
+      "DatasheetUrl": "https://example.com/datasheet.pdf",
+      "ProductVariations": [
+        {
+          "DigiKeyProductNumber": "P5555-ND",
+          "PackageType": {"Id": 3, "Name": "Bulk"},
+          "StandardPricing": [
+            {"BreakQuantity": 1, "UnitPrice": 1.03, "TotalPrice": 1.03},
+            {"BreakQuantity": 10, "UnitPrice": 0.79, "TotalPrice": 7.9},
+            {"BreakQuantity": 100, "UnitPrice": 0.56, "TotalPrice": 56.0}
+          ],
+          "MyPricing": [],
+          "MarketPlace": false,
+          "TariffActive": false,
+          "QuantityAvailableforPackageType": 4200,
+          "MaxQuantityForDistribution": 0,
+          "MinimumOrderQuantity": 1,
+          "StandardPackage": 200,
+          "DigiReelFee": 0.0
+        },
+        {
+          "DigiKeyProductNumber": "P5555DKR-ND",
+          "PackageType": {"Id": 243, "Name": "Digi-Reel"},
+          "StandardPricing": [{"BreakQuantity": 1, "UnitPrice": 1.03, "TotalPrice": 1.03}],
+          "MarketPlace": true,
+          "TariffActive": false,
+          "QuantityAvailableforPackageType": 0,
+          "MinimumOrderQuantity": 0,
+          "DigiReelFee": 7.0
+        }
+      ],
+      "QuantityAvailable": 4200,
+      "ProductStatus": {"Id": 0, "Status": "Active"},
+      "Parameters": [
+        {"ParameterId": 3, "ParameterText": "Tolerance", "ValueText": "\u00b120%"},
+        {"ParameterId": 724, "ParameterText": "ESR (Equivalent Series Resistance)", "ValueText": "-"}
+      ],
+      "ManufacturerLeadWeeks": "27"
+    }
+  ],
+  "ProductsCount": 1,
+  "ExactMatches": []
+}

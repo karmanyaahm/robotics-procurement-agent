@@ -1,0 +1,18 @@
+# One request per purchase decision. Fill this in (with the user) before
+# capturing any offers.
+title: ""
+need_by: null            # YYYY-MM-DD, or null. Tightens the lead-time limit.
+
+items:
+  - id: item-1           # lowercase slug; offers reference it as "item"
+    description: ""
+    qty: 1
+    compare_options: false     # true → report the landed-cost delta between options
+                               # (e.g. 2-drawer vs 3-drawer, or alternate MPNs)
+    max_lead_time_days: null   # overrides policy.yaml for this item
+    # Every requirement must be a testable statement. Each offer needs a
+    # spec_check for every id here, or it is excluded. Write bounds as
+    # inequalities with units ("<= 27 in", ">= 16 GB single module"), and name
+    # the exact thing to check ("USB ID of the adapter's current hardware
+    # revision is claimed by an in-kernel driver in Linux 6.8").
+    requirements: {}

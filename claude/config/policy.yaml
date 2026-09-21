@@ -1,0 +1,23 @@
+# Purchasing policy used by `procure compare`.
+
+currency: USD
+
+# Combined sales-tax rate as a fraction (0.0825 = 8.25%). 0 = tax not modelled;
+# every offer then gets a "tax not modelled" flag. Tax only changes the ranking
+# when vendors differ in charges_tax (e.g. you're tax-exempt with one of them).
+tax_rate: 0
+tax_shipping: false
+
+# Offers captured longer ago than this get a "stale" flag.
+max_offer_age_hours: 72
+
+# Offers that can't ship the needed quantity from stock are excluded if their
+# lead time exceeds this. Items can override it; request need_by tightens it.
+max_lead_time_days: 21
+
+# Verification tolerance on unit price, in currency units.
+verify_tolerance: 0.01
+
+# If buying past a price break is cheaper overall (e.g. 100 pcs < 90 pcs),
+# rank by the cheaper quantity and flag it.
+allow_buy_up: true

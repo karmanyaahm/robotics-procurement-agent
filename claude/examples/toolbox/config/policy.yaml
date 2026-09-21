@@ -1,0 +1,8 @@
+# EXAMPLE ONLY.
+currency: USD
+tax_rate: 0.08
+tax_shipping: false
+max_offer_age_hours: 1000000   # example data is old; don't flag it stale
+max_lead_time_days: 21
+verify_tolerance: 0.01
+allow_buy_up: true

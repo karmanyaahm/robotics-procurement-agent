@@ -1,0 +1,18 @@
+title: "EXAMPLE (fictional vendors and prices) — tool cabinet + standoffs"
+need_by: null
+items:
+  - id: toolbox
+    description: "Rolling tool cabinet for the robot bay; deciding between 2- and 3-drawer."
+    qty: 1
+    compare_options: true
+    requirements:
+      width: "Overall width <= 27 in"
+      lock: "Keyed lock on drawers"
+      casters: "Has casters, at least 2 of them locking"
+  - id: standoffs
+    description: "M3 x 10 mm nylon standoffs, female-female"
+    qty: 90
+    requirements:
+      thread: "M3 thread, female-female"
+      length: "Body length = 10 mm"
+      material: "Nylon"

@@ -1,0 +1,37 @@
+{
+  "_comment": "Synthetic, built from the Search API's documented field names. Values are illustrative.",
+  "Errors": [],
+  "SearchResults": {
+    "NumberOfResult": 1,
+    "Parts": [
+      {
+        "Availability": "12,345 In Stock",
+        "AvailabilityInStock": "12345",
+        "DataSheetUrl": "https://example.com/ds.pdf",
+        "Description": "Standoffs & Spacers M3 x 10 F-F Nylon",
+        "Manufacturer": "Example Mfr",
+        "ManufacturerPartNumber": "NS-M3-10",
+        "Min": "10",
+        "Mult": "10",
+        "MouserPartNumber": "123-NS-M3-10",
+        "LeadTime": "8 Weeks",
+        "LifecycleStatus": null,
+        "ROHSStatus": "RoHS Compliant",
+        "ProductDetailUrl": "https://www.mouser.com/ProductDetail/123-NS-M3-10",
+        "ProductAttributes": [
+          {"AttributeName": "Packaging", "AttributeValue": "Bulk"},
+          {"AttributeName": "Packaging", "AttributeValue": "Bag"}
+        ],
+        "PriceBreaks": [
+          {"Quantity": 10, "Price": "$0.18", "Currency": "USD"},
+          {"Quantity": 1000, "Price": "$0.09", "Currency": "USD"}
+        ]
+      },
+      {
+        "MouserPartNumber": "123-NOPRICE",
+        "ManufacturerPartNumber": "NOPRICE",
+        "PriceBreaks": []
+      }
+    ]
+  }
+}

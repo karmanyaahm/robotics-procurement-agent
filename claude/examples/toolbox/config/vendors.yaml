@@ -1,0 +1,24 @@
+# EXAMPLE ONLY — fictional vendors for the worked example and tests.
+vendors:
+  vendor-a:
+    name: Example Vendor A
+    approved: true
+    access: browser
+    domains: [example.com]
+    charges_tax: true
+    cart_ok: true
+    shipping: {flat: 6.95, free_over: 50}
+  vendor-b:
+    name: Example Vendor B
+    approved: true
+    access: browser
+    domains: [example.org]
+    charges_tax: true
+    cart_ok: true
+    shipping: null
+  vendor-c:
+    name: Example Vendor C (not on the approved list)
+    approved: false
+    access: browser
+    domains: [example.net]
+    shipping: null
